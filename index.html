@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update your password</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", SegoeUI, Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            width: 440px;
+            background: #ffffff;
+            margin: 80px auto;
+            padding: 36px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            height: 24px;
+            margin-right: 8px;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 14px;
+            color: #5f5f5f;
+            margin-bottom: 24px;
+        }
+
+        .field {
+            margin-bottom: 18px;
+        }
+
+        .field label {
+            display: none;
+        }
+
+        .field input {
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #666;
+            font-size: 15px;
+            padding: 8px 0;
+            outline: none;
+        }
+
+        .field input:focus {
+            border-bottom: 2px solid #0067b8;
+        }
+
+        .button-container {
+            text-align: right;
+            margin-top: 30px;
+        }
+
+        button {
+            background-color: #0067b8;
+            color: white;
+            border: none;
+            padding: 8px 28px;
+            font-size: 14px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #005a9e;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="logo">
+            <!-- Optional logo (remove if not needed) -->
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft">
+        </div>
+
+        <h1>Update your password</h1>
+        <p>
+            You need to update your password because this is the first time you are signing in,
+            or because your password has expired.
+        </p>
+
+        <form>
+            <div class="field">
+                <input type="email" placeholder="Email ID" required>
+            </div>
+
+            <div class="field">
+                <input type="password" placeholder="Current password" required>
+            </div>
+
+            <div class="field">
+                <input type="password" placeholder="New password" required>
+            </div>
+
+            <div class="field">
+                <input type="password" placeholder="Confirm password" required>
+            </div>
+
+            <div class="button-container">
+                <button type="submit">Update</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
